@@ -5,4 +5,4 @@ Display a pricing table with Bulma
 
 Documentation & Demo
 ---
-You can find the Documentation and a demo [here](https://wikiki.github.io/bulma-extensions/pricingtable)
+You can find the Documentation and a demo [here](https://wikiki.github.io/bulma-extensions/pricing-table)
