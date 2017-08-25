@@ -1,0 +1,72 @@
+$pricing-plan-border: .1rem solid $grey-lighter !default
+$pricing-plan-border-radius: $radius !default
+$pricing-header-background: $grey-dark !default
+$pricing-item-border: .1rem solid $grey-lighter !default
+$pricing-price-background: $grey-lighter !default
+
+.pricing-table
+  display: flex
+  align-items: stretch
+  flex-flow: row wrap
+  justify-content: space-around
+
+  .pricing-plan
+    display: flex
+    flex-direction: column
+    flex: 1
+    width: 0
+    border: $pricing-plan-border
+    border-radius: $pricing-plan-border-radius
+    list-style-type: none
+    margin: 0
+    padding: 0
+    transition: 0.25s
+    margin-bottom: 1em
+
+    .plan-header
+      border-top-left-radius: $pricing-plan-border-radius
+      border-top-right-radius: $pricing-plan-border-radius
+      background-color: $pricing-header-background
+      color: $white
+      font-size: $size-large
+      font-weight: $weight-semibold
+      padding: .75em
+      align-content: center
+      text-align: center
+
+    .plan-item
+      background-color: $white
+      border-bottom: $pricing-item-border
+      padding: .75em
+      align-content: center
+      text-align: center
+      font-size: $size-normal
+
+    .plan-price
+      background-color: $pricing-price-background
+      font-size: $size-medium
+      font-weight: $weight-semibold
+      padding: .75em
+      align-content: center
+      text-align: center
+
+    .plan-action
+      border-bottom-left-radius: $pricing-plan-border-radius
+      border-bottom-right-radius: $pricing-plan-border-radius
+      padding: .75em
+      align-content: center
+      text-align: center
+      margin-top: auto
+
+    &:not(:last-child)
+      margin-right: 1em
+
+    &.is-active
+      .plan-header
+        background-color: $primary
+
+  &.is-hoverable
+    .pricing-plan
+      &:hover
+        box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2)
+        transform: scale(1.025)
