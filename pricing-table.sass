@@ -7,21 +7,23 @@ $pricing-price-background: $grey-lighter !default
 .pricing-table
   display: flex
   align-items: stretch
+  flex-direction: row
   flex-flow: row wrap
-  justify-content: space-around
+  justify-content: space-between
 
   .pricing-plan
     display: flex
     flex-direction: column
     flex: 1
     width: 0
+    margin: 0
+    padding: 0
+    background-color: $white
     border: $pricing-plan-border
     border-radius: $pricing-plan-border-radius
     list-style-type: none
-    margin: 0
-    padding: 0
     transition: 0.25s
-    margin-bottom: 1em
+    margin: .5em
 
     .plan-header
       border-top-left-radius: $pricing-plan-border-radius
@@ -35,7 +37,6 @@ $pricing-price-background: $grey-lighter !default
       text-align: center
 
     .plan-item
-      background-color: $white
       border-bottom: $pricing-item-border
       padding: .75em
       align-content: center
@@ -57,9 +58,6 @@ $pricing-price-background: $grey-lighter !default
       align-content: center
       text-align: center
       margin-top: auto
-
-    &:not(:last-child)
-      margin-right: 1em
 
     &.is-active
       .plan-header
