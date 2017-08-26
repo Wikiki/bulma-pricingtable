@@ -1,8 +1,10 @@
-$pricing-plan-border: .1rem solid $grey-lighter !default
+$pricing-plan-border: .1rem solid $white-ter !default
 $pricing-plan-border-radius: $radius !default
-$pricing-header-background: $grey-dark !default
-$pricing-item-border: .1rem solid $grey-lighter !default
-$pricing-price-background: $grey-lighter !default
+$pricing-header-background: $white !default
+$pricing-item-background: $white-ter !default
+$pricing-item-border: .1rem solid $white !default
+$pricing-item-color: $grey !default
+$pricing-price-background: white !default
 
 .pricing-table
   display: flex
@@ -29,27 +31,39 @@ $pricing-price-background: $grey-lighter !default
       border-top-left-radius: $pricing-plan-border-radius
       border-top-right-radius: $pricing-plan-border-radius
       background-color: $pricing-header-background
-      color: $white
-      font-size: $size-large
+      font-size: $size-medium
       font-weight: $weight-semibold
       padding: .75em
       align-content: center
       text-align: center
 
     .plan-item
+      background: $pricing-item-background
       border-bottom: $pricing-item-border
       padding: .75em
       align-content: center
       text-align: center
-      font-size: $size-normal
+      font-size: .9em
+      color: $pricing-item-color
 
     .plan-price
       background-color: $pricing-price-background
-      font-size: $size-medium
-      font-weight: $weight-semibold
+      font-size: $size-small
+      font-weight: $weight-normal
       padding: .75em
       align-content: center
       text-align: center
+
+      .plan-price-amount
+        font-size: $size-2
+        font-weight: $weight-bold
+
+        .plan-price-currency
+          vertical-align: super
+          font-size: $size-normal !important
+          font-weight: $weight-normal !important
+          color: $text
+          margin-right: .25rem
 
     .plan-action
       border-bottom-left-radius: $pricing-plan-border-radius
@@ -60,11 +74,66 @@ $pricing-price-background: $grey-lighter !default
       margin-top: auto
 
     &.is-active
-      .plan-header
-        background-color: $primary
+      box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2)
+      transform: scale(1.05)
+      .plan-price
+        .plan-price-amount
+          color: $primary
+      .plan-action
+        .button
+          background-color: $primary
+          border-color: transparent
+          color: findColorInvert( $primary )
+          &:hover,
+          &.is-hovered
+            background-color: darken($primary, 2.5%)
+            border-color: transparent
+            color: findColorInvert( $primary )
+          &:focus,
+          &.is-focused
+            border-color: transparent
+            box-shadow: 0 0 0.5em rgba($primary, 0.25)
+            color: findColorInvert( $primary )
+          &:active,
+          &.is-active
+            background-color: darken($primary, 5%)
+            border-color: transparent
+            box-shadow: $button-shadow-inset
+            color: findColorInvert( $primary )
+          &[disabled]
+            background-color: $primary
+            border-color: transparent
+            box-shadow: none
 
-  &.is-hoverable
-    .pricing-plan
-      &:hover
-        box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2)
-        transform: scale(1.025)
+    @each $name, $pair in $colors
+      $color: nth($pair, 1)
+      $color-invert: nth($pair, 2)
+      &.is-#{$name}
+        .plan-price
+          .plan-price-amount
+            color: $color
+        .plan-action
+          .button
+            background-color: $color
+            border-color: transparent
+            color: $color-invert
+            &:hover,
+            &.is-hovered
+              background-color: darken($color, 2.5%)
+              border-color: transparent
+              color: $color-invert
+            &:focus,
+            &.is-focused
+              border-color: transparent
+              box-shadow: 0 0 0.5em rgba($color, 0.25)
+              color: $color-invert
+            &:active,
+            &.is-active
+              background-color: darken($color, 5%)
+              border-color: transparent
+              box-shadow: $button-shadow-inset
+              color: $color-invert
+            &[disabled]
+              background-color: $color
+              border-color: transparent
+              box-shadow: none
