@@ -65,7 +65,7 @@ $pricing-price-background: white !default
           color: $text
           margin-right: .25rem
 
-    .plan-action
+    .plan-footer
       border-bottom-left-radius: $pricing-plan-border-radius
       border-bottom-right-radius: $pricing-plan-border-radius
       padding: .75em
@@ -79,7 +79,7 @@ $pricing-price-background: white !default
       .plan-price
         .plan-price-amount
           color: $primary
-      .plan-action
+      .plan-footer
         .button
           background-color: $primary
           border-color: transparent
@@ -112,7 +112,7 @@ $pricing-price-background: white !default
         .plan-price
           .plan-price-amount
             color: $color
-        .plan-action
+        .plan-footer
           .button
             background-color: $color
             border-color: transparent
@@ -137,3 +137,33 @@ $pricing-price-background: white !default
               background-color: $color
               border-color: transparent
               box-shadow: none
+  &.is-horizontal
+    .pricing-plan
+      display: flex
+      flex-direction: row
+      flex-basis: 100%
+      .plan-header
+        width: 50%
+        display: flex
+        flex-direction: column
+        justify-content: center
+      .plan-price
+        width: 100%
+        display: flex
+        flex-direction: row
+        justify-content: center
+      .plan-items
+        width: 100%
+        background-color: $pricing-item-background
+        columns: 2
+        -webkit-columns: 2
+        -moz-columns: 2
+        column-gap: .1rem
+      .plan-item
+        display: block
+      .plan-footer
+        width: 50%
+        display: flex
+        flex-direction: column
+        justify-content: center
+        margin: auto
