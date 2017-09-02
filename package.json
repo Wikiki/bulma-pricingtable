@@ -1,6 +1,6 @@
 {
   "name": "bulma-pricingtable",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Display a pricing table easily. ",
   "main": "index.js",
   "scripts": {
@@ -14,7 +14,9 @@
     "Bulma",
     "bulma",
     "bulma.io",
-    "extensions"
+    "extensions",
+    "pricing table",
+    "price table"
   ],
   "author": "Wikiki <wikiki@protonmail.com> (https://wikiki.github.io/bulma-extensions/overview)",
   "license": "MIT",
