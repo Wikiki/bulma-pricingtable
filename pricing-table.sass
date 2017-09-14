@@ -1,5 +1,7 @@
 $pricing-plan-border: .1rem solid $white-ter !default
 $pricing-plan-border-radius: $radius !default
+$pricing-plan-active-shadow: 0 8px 12px 0 rgba($grey, 0.2) !default
+$pricing-plan-active-transform: scale(1.05) !default
 $pricing-header-background: $white !default
 $pricing-item-background: $white-ter !default
 $pricing-item-border: .1rem solid $white !default
@@ -71,8 +73,8 @@ $pricing-price-background: white !default
       margin-top: auto
 
     &.is-active
-      box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2)
-      transform: scale(1.05)
+      box-shadow: $pricing-plan-active-shadow
+      transform: $pricing-plan-active-transform
       .plan-price
         .plan-price-amount
           color: $primary
