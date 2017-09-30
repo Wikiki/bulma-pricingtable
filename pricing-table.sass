@@ -15,6 +15,12 @@ $pricing-price-background: white !default
   flex-flow: row wrap
   justify-content: space-between
 
+  &.is-comparative
+    .pricing-plan
+      margin: 0
+      &:not(:last-child)
+        border-right: none
+
   .pricing-plan
     display: flex
     flex-direction: column
@@ -136,6 +142,14 @@ $pricing-price-background: white !default
 
 +tablet
   .pricing-table
+    &.is-comparative
+      margin: .5rem
+      &.is-features
+        display: none
+      .plan-item
+        &::before
+          content: attr( 'data-feature' )
+
     &.is-horizontal
       .pricing-plan
         display: flex
@@ -164,3 +178,18 @@ $pricing-price-background: white !default
           flex-direction: column
           justify-content: center
           margin: auto
+
++mobile
+  .pricing-table
+    &.is-comparative
+      .pricing-plan
+        &.is-features
+          display: none
+        margin: .5rem
+        .plan-item
+          &::before
+            content: attr(data-feature)
+            display: block
+            font-weight: $weight-semibold
+            font-size: $size-small
+            color: $grey-light
