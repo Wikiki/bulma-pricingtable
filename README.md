@@ -14,7 +14,7 @@ You can find the Documentation and a demo [here](https://wikiki.github.io/bulma-
 
 Getting Started
 ---
-To use this extension you need to clone bulma framework in the root directory, then compile the using a sass compiler
+To get a compiled version of this extension you need to clone bulma framework in the root directory, then compile it using a sass compiler.
 
 Ruby Example
 (assuming you do not have the sass gem and you have ssh configured for GitHub)
