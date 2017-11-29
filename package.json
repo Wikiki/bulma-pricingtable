@@ -1,8 +1,8 @@
 {
   "name": "bulma-pricingtable",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Display a pricing table easily. ",
-  "main": "index.js",
+  "main": "pricing-table.sass",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -23,5 +23,15 @@
   "bugs": {
     "url": "https://github.com/Wikiki/bulma-pricingtable/issues"
   },
-  "homepage": "https://github.com/Wikiki/bulma-pricingtable#readme"
+  "homepage": "https://github.com/Wikiki/bulma-pricingtable#readme",
+  "devDependencies": {
+    "bulma": "^0.6.1"
+  },
+  "files": [
+    "pricing-table.sass",
+    "pricing-table.css",
+    "pricing-table.min.css",
+    "LICENSE",
+    "README.md"
+  ]
 }
