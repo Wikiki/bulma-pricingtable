@@ -1,0 +1,27 @@
+{
+  "name": "bulma-pricingtable",
+  "description": "Display a pricing table easily.",
+  "main": "pricing-table.sass",
+  "authors": [
+    "Wikiki <wikiki@protonmail.com> (https://wikiki.github.io/bulma-extensions/overview)"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "Bulma",
+    "bulma",
+    "bulma.io",
+    "extensions",
+    "pricing",
+    "table",
+    "price",
+    "table"
+  ],
+  "homepage": "https://github.com/Wikiki/bulma-pricingtable",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
