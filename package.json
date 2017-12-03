@@ -29,9 +29,11 @@
   },
   "files": [
     "pricing-table.sass",
-    "bulma-pricing-table.css",
-    "bulma-pricing-table.min.css",
+    "bulma-pricingtable.sass",
+    "bulma-pricingtable.css",
+    "bulma-pricingtable.min.css",
     "LICENSE",
+    "CHANGELOG.md",
     "README.md"
   ]
 }
