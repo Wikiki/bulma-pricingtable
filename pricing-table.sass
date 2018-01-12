@@ -24,7 +24,7 @@ $pricing-price-background: white !default
   .pricing-plan
     display: flex
     flex-direction: column
-    flex: 1
+    flex: 1 1 auto
     background-color: $white
     border: $pricing-plan-border
     border-radius: $pricing-plan-border-radius
@@ -183,6 +183,8 @@ $pricing-price-background: white !default
   .pricing-table
     &.is-comparative
       .pricing-plan
+        &.is-plan-first-mobile
+          order: -1
         &.is-features
           display: none
         margin: .5rem
