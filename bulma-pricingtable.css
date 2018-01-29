@@ -26,7 +26,7 @@
 .pricing-table .pricing-plan {
   display: flex;
   flex-direction: column;
-  flex: 1;
+  flex: 1 1 auto;
   background-color: white;
   border: 0.1rem solid whitesmoke;
   border-radius: 3px;
@@ -512,6 +512,9 @@
 @media screen and (max-width: 768px) {
   .pricing-table.is-comparative .pricing-plan {
     margin: .5rem;
+  }
+  .pricing-table.is-comparative .pricing-plan.is-plan-first-mobile {
+    order: -1;
   }
   .pricing-table.is-comparative .pricing-plan.is-features {
     display: none;
