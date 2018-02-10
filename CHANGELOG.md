@@ -1,19 +1,3 @@
-<a name="0.1.8"></a>
-## [0.1.8](https://github.com/Wikiki/bulma-pricingtable/compare/v0.1.3...v0.1.8) (2018-02-09)
-
-
-### Bug Fixes
-
-* **bower:** Add missing version ([eba2057](https://github.com/Wikiki/bulma-pricingtable/commit/eba2057))
-
-
-### Features
-
-* **gulp:** Add gulp dependencies ([c793239](https://github.com/Wikiki/bulma-pricingtable/commit/c793239))
-* **gulp:** Add release task ([b59b95d](https://github.com/Wikiki/bulma-pricingtable/commit/b59b95d))
-
-
-
 <a name="0.1.7"></a>
 ## [0.1.7](https://github.com/Wikiki/bulma-pricingtable/compare/v0.1.3...v0.1.7) (2018-02-09)
 
