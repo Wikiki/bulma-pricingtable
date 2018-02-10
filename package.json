@@ -2,7 +2,7 @@
   "name": "bulma-pricingtable",
   "version": "0.1.7",
   "description": "Display a pricing table easily. ",
-  "main": "pricing-table.sass",
+  "main": "dist/bulma-pricingtable.sass",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -49,7 +49,7 @@
     "run-sequence": "^2.2.1"
   },
   "files": [
-    "dist/pricing-table.sass",
+    "dist/bulma-pricingtable.sass",
     "dist/bulma-pricingtable.min.css",
     "LICENSE",
     "CHANGELOG.md",
