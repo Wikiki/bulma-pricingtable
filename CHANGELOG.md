@@ -1,3 +1,15 @@
+<a name="0.1.8"></a>
+## [0.1.8](https://github.com/Wikiki/bulma-pricingtable/compare/0.1.7...0.1.8) (2018-02-10)
+
+
+### Bug Fixes
+
+* **gulp:** Correct dist filenames ([2fe00d0](https://github.com/Wikiki/bulma-pricingtable/commit/2fe00d0))
+* **pacjage:** Correct file paths ([faa9bd7](https://github.com/Wikiki/bulma-pricingtable/commit/faa9bd7))
+* **travis:** Remove configuration ([892419e](https://github.com/Wikiki/bulma-pricingtable/commit/892419e))
+
+
+
 <a name="0.1.7"></a>
 ## [0.1.7](https://github.com/Wikiki/bulma-pricingtable/compare/v0.1.3...v0.1.7) (2018-02-09)
 
