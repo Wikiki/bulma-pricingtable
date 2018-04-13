@@ -1,3 +1,8 @@
+<a name="1.2.0"></a>
+# [1.2.0](https://github.com/Wikiki/bulma-pricingtable/compare/1.1.0...1.2.0) (2018-04-13)
+
+
+
 <a name="1.1.0"></a>
 # [1.1.0](https://github.com/Wikiki/bulma-pricingtable/compare/0.1.7...1.1.0) (2018-04-13)
 

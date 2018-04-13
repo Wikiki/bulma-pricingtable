@@ -1,6 +1,6 @@
 {
   "name": "bulma-pricingtable",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Display a pricing table easily. ",
   "main": "dist/bulma-pricingtable.sass",
   "scripts": {
