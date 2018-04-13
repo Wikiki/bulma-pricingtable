@@ -1,3 +1,17 @@
+<a name="1.0.0"></a>
+# [1.0.0](https://github.com/Wikiki/bulma-pricingtable/compare/0.1.7...1.0.0) (2018-04-13)
+
+
+### Bug Fixes
+
+* **gulp:** Correct dist filenames ([2fe00d0](https://github.com/Wikiki/bulma-pricingtable/commit/2fe00d0))
+* **gulp:** Remove Bulma’s important from dist’sass ([3a763e4](https://github.com/Wikiki/bulma-pricingtable/commit/3a763e4))
+* **gulp:** Use UMD modules style ([9033d39](https://github.com/Wikiki/bulma-pricingtable/commit/9033d39))
+* **pacjage:** Correct file paths ([faa9bd7](https://github.com/Wikiki/bulma-pricingtable/commit/faa9bd7))
+* **travis:** Remove configuration ([892419e](https://github.com/Wikiki/bulma-pricingtable/commit/892419e))
+
+
+
 <a name="0.1.9"></a>
 ## [0.1.9](https://github.com/Wikiki/bulma-pricingtable/compare/0.1.7...0.1.9) (2018-04-13)
 

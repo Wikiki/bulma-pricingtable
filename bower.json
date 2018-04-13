@@ -2,7 +2,7 @@
   "name": "bulma-pricingtable",
   "description": "Display a pricing table easily.",
   "main": "pricing-table.sass",
-  "version": "0.1.9",
+  "version": "1.0.0",
   "authors": [
     "Wikiki <wikiki@protonmail.com> (https://wikiki.github.io/bulma-extensions/overview)"
   ],
