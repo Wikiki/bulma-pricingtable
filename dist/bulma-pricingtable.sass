@@ -17,9 +17,19 @@ $pricing-price-background: white !default
 
   &.is-comparative
     .pricing-plan
+      border-radius: initial
       margin: 0
       &:not(:last-child)
         border-right: none
+      &:first-child
+        border-top-left-radius: $pricing-plan-border-radius
+        border-bottom-left-radius: $pricing-plan-border-radius
+      &:last-child
+        border-top-right-radius: $pricing-plan-border-radius
+        border-bottom-right-radius: $pricing-plan-border-radius
+      &.is-active
+        border: $pricing-plan-border
+        border-radius: $pricing-plan-border-radius
 
   .pricing-plan
     display: flex
@@ -36,6 +46,7 @@ $pricing-price-background: white !default
       border-top-left-radius: $pricing-plan-border-radius
       border-top-right-radius: $pricing-plan-border-radius
       background-color: $pricing-header-background
+      color: $text
       font-size: $size-medium
       font-weight: $weight-semibold
       padding: .75em
@@ -53,6 +64,7 @@ $pricing-price-background: white !default
 
     .plan-price
       background-color: $pricing-price-background
+      color: $text
       font-size: $size-small
       font-weight: $weight-normal
       padding: .75em
