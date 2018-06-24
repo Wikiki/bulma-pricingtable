@@ -2,7 +2,7 @@
   "name": "bulma-pricingtable",
   "version": "2.1.0",
   "description": "Display a pricing table easily. ",
-  "main": "dist/bulma-pricingtable.sass",
+  "main": "dist/css/bulma-pricingtable.sass",
   "scripts": {
     "build": "gulp",
     "commit": "git-cz",
