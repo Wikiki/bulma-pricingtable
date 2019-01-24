@@ -1,3 +1,4 @@
+$pricing-plan-colors: $colors !default
 $pricing-plan-border: .1rem solid $white-ter !default
 $pricing-plan-border-radius: $radius !default
 $pricing-plan-active-shadow: 0 8px 12px 0 rgba($grey, 0.2) !default
@@ -120,7 +121,7 @@ $pricing-price-background: white !default
             background-color: $primary
             border-color: transparent
 
-    @each $name, $pair in $colors
+    @each $name, $pair in $pricing-plan-colors
       $color: nth($pair, 1)
       $color-invert: nth($pair, 2)
       &.is-#{$name}
